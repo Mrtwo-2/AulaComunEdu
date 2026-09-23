@@ -1,0 +1,19 @@
+# robots.txt de "Aula Común" (demo académica)
+#
+# Nota para la presentación: este archivo es PÚBLICO. Cualquiera puede
+# visitarlo en /robots.txt sin ninguna autenticación. Sirve para decirle
+# a los buscadores qué rutas no indexar, pero nunca fue -ni debía ser- un
+# mecanismo de control de acceso.
+#
+# ANTES: listar /panel-admin/ aquí y no verificar nada del lado del
+# servidor era un ejemplo real de "seguridad por oscuridad": quien leía
+# este archivo entraba directo, sin credenciales.
+#
+# AHORA: /panel-admin/ sigue apareciendo aquí (para que el ejercicio de
+# descubrir la ruta siga siendo parte de la demo), pero ya no basta con
+# conocer la URL. Al entrar sin sesión de Administrador, la ruta redirige
+# a /panel-admin/login.html y exige credenciales válidas antes de mostrar
+# cualquier contenido.
+
+User-agent: *
+Disallow: /panel-admin/
